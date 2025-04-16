@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .project-details {
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .project-header {
+            display: flex;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .project-image {
+            width: 400px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .project-info {
+            flex: 1;
+        }
+
+        .project-info h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .project-description {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #B3B3B3;
+            margin-bottom: 30px;
+        }
+
+        .project-meta {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .meta-item {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .meta-item h3 {
+            font-size: 16px;
+            color: #1DB954;
+            margin-bottom: 10px;
+        }
+
+        .meta-item p {
+            font-size: 14px;
+            color: #B3B3B3;
+        }
+
+        .team-section {
+            margin-top: 60px;
+        }
+
+        .team-members {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .team-member {
+            text-align: center;
+        }
+
+        .team-member img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .team-member h3 {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .team-member p {
+            font-size: 14px;
+            color: #B3B3B3;
+        }
+
+        .back-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+            z-index: 100;
+        }
+
+        .back-button:hover {
+            color: #1DB954;
+        }
+    </style>
+</head>
+<body>
+    <button class="back-button" onclick="history.back()">
+        <i class="fas fa-arrow-left"></i>
+    </button>
+    <div class="project-details">
+        <div class="project-header">
+            <img class="project-image" src="" alt="Project Image">
+            <div class="project-info">
+                <h1></h1>
+                <p class="project-description"></p>
+                <div class="project-meta">
+                    <div class="meta-item">
+                        <h3>Timeline</h3>
+                        <p>Started: January 2023</p>
+                        <p>Completed: June 2023</p>
+                    </div>
+                    <div class="meta-item">
+                        <h3>Tech Stack</h3>
+                        <div class="tech-stack"></div>
+                    </div>
+                    <div class="meta-item">
+                        <h3>Role</h3>
+                        <p>Lead Developer</p>
+                    </div>
+                    <div class="meta-item">
+                        <h3>Client</h3>
+                        <p>Fortune 500 Company</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="team-section">
+            <h2>Team Members</h2>
+            <div class="team-members">
+                <!-- Team members will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const params = new URLSearchParams(window.location.search);
+            const projectId = params.get('id');
+            
+            // Project data (in real app, this would come from a database)
+            const projectData = {
+                'enterprise': {
+                    title: 'Enterprise E-commerce Platform',
+                    description: 'Led the development of a large-scale e-commerce solution that handles millions of transactions daily. Implemented advanced features including real-time inventory management, AI-powered product recommendations, and seamless payment integration.',
+                    image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+                    tech: ['React', 'Node.js', 'MongoDB', 'AWS'],
+                    team: [
+                        { name: 'John Doe', role: 'Frontend Lead', image: 'https://i.pravatar.cc/150?img=1' },
+                        { name: 'Jane Smith', role: 'Backend Developer', image: 'https://i.pravatar.cc/150?img=2' },
+                        { name: 'Mike Johnson', role: 'UI/UX Designer', image: 'https://i.pravatar.cc/150?img=3' }
+                    ]
+                },
+                'financial': {
+                    title: 'Financial Dashboard',
+                    description: 'Developed a comprehensive financial data visualization platform that processes and displays real-time market data, custom analytics, and automated reporting tools.',
+                    image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+                    tech: ['Vue.js', 'D3.js', 'Python', 'PostgreSQL'],
+                    team: [
+                        { name: 'Sarah Wilson', role: 'Data Scientist', image: 'https://i.pravatar.cc/150?img=4' },
+                        { name: 'Tom Brown', role: 'Full Stack Developer', image: 'https://i.pravatar.cc/150?img=5' }
+                    ]
+                },
+                'healthcare': {
+                    title: 'Healthcare Management System',
+                    description: 'Built a HIPAA-compliant healthcare management system featuring electronic health records, appointment scheduling, and integrated billing system.',
+                    image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80',
+                    tech: ['Angular', 'Java Spring', 'MySQL', 'Docker'],
+                    team: [
+                        { name: 'Emily Chen', role: 'System Architect', image: 'https://i.pravatar.cc/150?img=6' },
+                        { name: 'David Kim', role: 'Security Specialist', image: 'https://i.pravatar.cc/150?img=7' },
+                        { name: 'Lisa Wang', role: 'QA Lead', image: 'https://i.pravatar.cc/150?img=8' }
+                    ]
+                }
+            };
+
+            const project = projectData[projectId];
+            if (project) {
+                document.querySelector('.project-image').src = project.image;
+                document.querySelector('.project-info h1').textContent = project.title;
+                document.querySelector('.project-description').textContent = project.description;
+                document.querySelector('.tech-stack').innerHTML = project.tech.map(tech => 
+                    `<span>${tech}</span>`
+                ).join('');
+
+                document.querySelector('.team-members').innerHTML = project.team.map(member => `
+                    <div class="team-member">
+                        <img src="${member.image}" alt="${member.name}">
+                        <h3>${member.name}</h3>
+                        <p>${member.role}</p>
+                    </div>
+                `).join('');
+
+                document.title = `${project.title} - Portfolio`;
+            }
+        });
+    </script>
+</body>
+</html> 

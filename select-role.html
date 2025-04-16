@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Role - Portfolio</title>
+    <link rel="stylesheet" href="select-role.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Spotify_logo_without_text.svg/168px-Spotify_logo_without_text.svg.png" alt="Logo">
+    </div>
+    <div class="profile-gate">
+        <h1>Who's Viewing?</h1>
+        <div class="profiles">
+            <a href="index.html" class="profile" data-role="recruiter">
+                <div class="avatar" style="background-color: #1DB954;">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <span>Recruiter</span>
+            </a>
+            <a href="index.html" class="profile" data-role="developer">
+                <div class="avatar" style="background-color: #4A4A4A;">
+                    <i class="fas fa-code"></i>
+                </div>
+                <span>Developer</span>
+            </a>
+            <a href="index.html" class="profile" data-role="stalker">
+                <div class="avatar" style="background-color: #E50914;">
+                    <i class="fas fa-eye"></i>
+                </div>
+                <span>Stalker</span>
+            </a>
+            <a href="index.html" class="profile" data-role="adventurer">
+                <div class="avatar" style="background-color: #F5A623;">
+                    <i class="fas fa-compass"></i>
+                </div>
+                <span>Adventurer</span>
+            </a>
+        </div>
+    </div>
+    <script>
+        document.querySelectorAll('.profile').forEach(profile => {
+            profile.addEventListener('click', (e) => {
+                e.preventDefault();
+                const role = profile.getAttribute('data-role');
+                localStorage.setItem('selectedRole', role);
+                window.location.href = 'index.html';
+            });
+        });
+    </script>
+</body>
+</html> 

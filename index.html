@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanveer - UI/UX & Frontend Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cursor-dot"></div>
+    
+    <header class="neubrutalism-header">
+        <div class="header-container">
+            <nav>
+                <div class="logo-container">
+                    <div class="logo">T.</div>
+                    <div class="logo-text">
+                        <span class="name">Tanveer</span>
+                        <span class="title">UI/UX & Frontend</span>
+                    </div>
+                </div>
+                
+                <div class="nav-menu">
+                    <ul class="nav-links">
+                        <li><a href="#home" class="nav-link active"><span>01.</span>Home</a></li>
+                        <li><a href="#about" class="nav-link"><span>02.</span>About</a></li>
+                        <li><a href="#skills" class="nav-link"><span>03.</span>Skills</a></li>
+                        <li><a href="#projects" class="nav-link"><span>04.</span>Projects</a></li>
+                        <li><a href="#process" class="nav-link"><span>05.</span>Process</a></li>
+                        <li><a href="#contact" class="nav-link"><span>06.</span>Contact</a></li>
+                    </ul>
+                    
+                    <div class="nav-buttons">
+                        <button class="theme-toggle" id="theme-toggle">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                        <a href="#contact" class="btn nav-cta">Let's Talk</a>
+                    </div>
+                </div>
+                
+                <button class="mobile-menu-button">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-progress-bar"></div>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+            <div class="hero-container">
+                <div class="hero-content animate-fadeInUp">
+                    <div class="hero-badge">UI/UX Designer & Developer</div>
+                    <h1>Creative Solutions Through <span class="highlight">Design & Code</span></h1>
+                    <h2>Transforming ideas into stunning digital experiences</h2>
+                    <p class="age-location">16 years old | India</p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">2+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">98%</span>
+                            <span class="stat-label">Client Satisfaction</span>
+                        </div>
+                    </div>
+                    <div class="cta-buttons">
+                        <a href="#projects" class="btn primary-btn">View My Work</a>
+                        <a href="#contact" class="btn secondary-btn">Contact Me</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="https://images.unsplash.com/photo-1607705703571-c5a8695f18f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="UI/UX Design">
+                    </div>
+                    <div class="hero-tech-stack">
+                        <div class="tech-icon"><i class="fab fa-figma"></i></div>
+                        <div class="tech-icon"><i class="fab fa-react"></i></div>
+                        <div class="tech-icon"><i class="fab fa-js"></i></div>
+                        <div class="tech-icon"><i class="fab fa-html5"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scroll</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="about-bg"></div>
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content animate-fadeInUp">
+                <div class="about-text">
+                    <p>I'm a passionate UI/UX designer and frontend developer with a keen eye for design and user experience. At 16, I'm already building modern, responsive websites and web applications with a focus on usability and aesthetics.</p>
+                    <p>I love creating beautiful interfaces and solving complex problems through design thinking and clean code. My journey in design and development started with a curiosity to build things that people can interact with and enjoy using.</p>
+                    <p>I specialize in creating websites and applications that not only look great but also provide an intuitive user experience. My goal is to continue growing as a designer and developer while exploring new technologies and design trends.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-figma"></i>
+                    <h3>UI/UX Design</h3>
+                    <p>Creating intuitive and aesthetically pleasing user interfaces</p>
+                    <div class="skill-level">
+                        <div class="skill-progress" data-progress="95"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>Visual Design</h3>
+                    <p>Crafting beautiful visual elements and design systems</p>
+                    <div class="skill-level">
+                        <div class="skill-progress" data-progress="90"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML/CSS</h3>
+                    <p>Building responsive and accessible web layouts</p>
+                    <div class="skill-level">
+                        <div class="skill-progress" data-progress="90"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript</h3>
+                    <p>Creating interactive and dynamic web experiences</p>
+                    <div class="skill-level">
+                        <div class="skill-progress" data-progress="85"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-react"></i>
+                    <h3>React</h3>
+                    <p>Building modern component-based user interfaces</p>
+                    <div class="skill-level">
+                        <div class="skill-progress" data-progress="80"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Responsive Design</h3>
+                    <p>Creating websites that work across all devices</p>
+                    <div class="skill-level">
+                        <div class="skill-progress" data-progress="95"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="process" class="process-section">
+            <h2 class="section-title">My Design Process</h2>
+            <div class="process-container">
+                <div class="process-step animate-fadeInUp">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Research</h3>
+                        <p>Understanding the problem space through thorough research is my first step. I talk to users, analyze competitors, and identify key opportunities.</p>
+                        <div class="step-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="process-step animate-fadeInUp">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Ideation</h3>
+                        <p>This phase involves brainstorming and sketching multiple solutions. I create wireframes and user flows to test different approaches to the problem.</p>
+                        <div class="step-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="process-step animate-fadeInUp">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Design</h3>
+                        <p>I create high-fidelity mockups and interactive prototypes. Focus on visual hierarchy, color theory, and usability is paramount in this stage.</p>
+                        <div class="step-icon">
+                            <i class="fas fa-pencil-ruler"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="process-step animate-fadeInUp">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>Testing</h3>
+                        <p>Testing with real users helps identify issues and improvement areas. This feedback loop is essential for refining the design.</p>
+                        <div class="step-icon">
+                            <i class="fas fa-vial"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="process-step animate-fadeInUp">
+                    <div class="step-number">05</div>
+                    <div class="step-content">
+                        <h3>Development</h3>
+                        <p>I bring designs to life with clean, semantic code. My development process ensures the final product stays true to the design vision.</p>
+                        <div class="step-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="process-connector"></div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="ui-design">UI Design</button>
+                <button class="filter-btn" data-filter="web-dev">Web Development</button>
+                <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="ui-design">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Project 1">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">UI/UX Design</div>
+                        <h3>Personal Finance Dashboard</h3>
+                        <p>A comprehensive finance tracking application with intuitive visualizations and user-friendly interface.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Figma</span>
+                            <span class="project-tag">UI Design</span>
+                            <span class="project-tag">User Research</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn primary-btn">View Case Study</a>
+                            <a href="#" class="btn secondary-btn">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="web-dev">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Project 2">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Web Development</div>
+                        <h3>E-commerce UI Redesign</h3>
+                        <p>A complete redesign of an e-commerce platform focusing on improving the shopping experience and conversion rate.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">Responsive</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn primary-btn">View Case Study</a>
+                            <a href="#" class="btn secondary-btn">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="mobile">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Project 3">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Mobile App Design</div>
+                        <h3>Weather App</h3>
+                        <p>A mobile weather application with beautiful visualizations and an intuitive interface for quick weather updates.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">UI Design</span>
+                            <span class="project-tag">Prototyping</span>
+                            <span class="project-tag">User Testing</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn primary-btn">View Case Study</a>
+                            <a href="#" class="btn secondary-btn">Prototype</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="ui-design">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Project 4">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">UI/UX Design</div>
+                        <h3>Project Management Tool</h3>
+                        <p>A complete redesign of a project management application with a focus on productivity and team collaboration.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Wireframing</span>
+                            <span class="project-tag">Usability Testing</span>
+                            <span class="project-tag">Design System</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="btn primary-btn">View Case Study</a>
+                            <a href="#" class="btn secondary-btn">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="view-all-projects">
+                <a href="#" class="btn outline-btn">View All Projects <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 class="contact-heading">Contact Information</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>your.email@example.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>India</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+91 XXXXXXXXXX</p>
+                    </div>
+                    <h3 class="contact-heading" style="margin-top: 2rem;">Find Me On</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3 class="contact-heading">Send Me a Message</h3>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="neubrutalism-footer">
+        <div class="footer-content">
+            <div class="footer-top">
+                <div class="footer-logo">Tanveer</div>
+                <div class="footer-nav">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-divider"></div>
+            <p class="copyright">&copy; 2024 Tanveer. All rights reserved.</p>
+        </div>
+        <a href="#home" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
